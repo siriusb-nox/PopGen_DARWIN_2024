@@ -11,8 +11,8 @@ This tutorial is intended for users with a basic knowledge in programming and is
 
 This tutorial requires the following programs/dependencies (it is highly recommended to have these installed before starting the tutorial). **Please make sure that the dependencies on which these programs run are also available**:
 
-1. [**PALEOMIX:**](https://paleomix.readthedocs.io/en/stable/)
+1. [**PALEOMIX:**](https://paleomix.readthedocs.io/en/stable/) PALEOMIX is a bioinformatics pipeline designed to analyzing contermporary and ancient DNA (aDNA) sequencing data in a population genomics framework. The pipeline has three modules but here we will work only with the "_bam_pipeline_" module. It begins by adapter trimming and quality filtering read data. Then the filtered read data is aligned to a reference genome using BWA/Bowtie2 algorithms. The output are BAM files. Read trimming and quality filtering as well as read mapping are all set and controlled through a *.yaml file. 
 2. [**Adapterremoval:**](https://adapterremoval.readthedocs.io/en/stable/) 
-3. [**BWA**](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiJw4ClmtCEAxW-mlYBHcqRAawQFnoECBoQAQ&url=https%3A%2F%2Fgithub.com%2Flh3%2Fbwa&usg=AOvVaw2UQDwSP6x4_7vvSFTzRZGr&opi=89978449)[**/Bowtie2:**](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml):
+3. [**BWA**](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiJw4ClmtCEAxW-mlYBHcqRAawQFnoECBoQAQ&url=https%3A%2F%2Fgithub.com%2Flh3%2Fbwa&usg=AOvVaw2UQDwSP6x4_7vvSFTzRZGr&opi=89978449)[**/Bowtie2:**](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
 4. [**ANGSD:**](https://www.popgen.dk/angsd/index.php/ANGSD)
 
