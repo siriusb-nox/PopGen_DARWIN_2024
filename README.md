@@ -16,3 +16,13 @@ This tutorial requires the following programs/dependencies (it is highly recomme
 3. [**BWA**](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwiJw4ClmtCEAxW-mlYBHcqRAawQFnoECBoQAQ&url=https%3A%2F%2Fgithub.com%2Flh3%2Fbwa&usg=AOvVaw2UQDwSP6x4_7vvSFTzRZGr&opi=89978449)[**/Bowtie2:**](https://bowtie-bio.sourceforge.net/bowtie2/index.shtml) These software align short read sequence data against a reference genome. BWA relies on the Burrows-Wheeler Transform (BWT) algorithm to index the reference genome and align (map) short reads in a fast manner to said reference. Bowtie2 in contrast uses the FM-index (an approach based on the BWT algorithm) to align short reads. Both tools can map reads using different sensitivity thresholds, thus resulting on less accurate (faster) or more comprehensive (slower) aligning strategies.   
 5. [**ANGSD:**](https://www.popgen.dk/angsd/index.php/ANGSD) This program calculate Genotype Likelihoods ([GLs](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3593722/)) and several other metrics from GLs, using as input a series of BAM files. The software also include a series of utilities that we will explore in this workshop, including NGSadmix ([to conduct admixture/structure analysis](https://www.popgen.dk/software/index.php/NgsAdmix)) and PCAngsd ([principal component analysis from Genotype Likelihoods](http://www.popgen.dk/software/index.php/PCAngsd)). The outcome of both NSGadmix and PCAngds is visualised in R (through the package [_ggplot2_](https://ggplot2.tidyverse.org)).
 
+## 2. Workshop structure
+This tutorial is divided into three steps:
+
+A. **Read trimming, mapping and realigning**
+
+B. **Genotype Likelihood analisys**
+
+C. **Principal component and Admixture/structure**
+
+**Figure 1**: ... 
