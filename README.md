@@ -25,7 +25,8 @@ B. **Genotype Likelihood analisys**
 
 C. **Principal component and Admixture/structure**
 
-**Figure 1**: ... 
+![Figure 1](https://github.com/siriusb-nox/ONT-workshop-Oct-2023/blob/main/IMG/pipeline_overview_v0_OP_16102023.png?raw=true)
+**Figure 1**: Simplified view of tutorial/pipeline
 
 >[!IMPORTANT]
 >**The base data needed to run this tutorial is available in the different subfolders of this repo (e.g., `XX` and `YY`), which will be copied in your local machine.**
