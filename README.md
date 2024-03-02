@@ -25,7 +25,7 @@ B. **Genotype Likelihood analisys**
 
 C. **Principal component and Admixture/structure**
 
-![Figure 1]()
+![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/pipeline_OP_v0.JPG)
 **Figure 1**: Simplified view of tutorial/pipeline
 
 >[!IMPORTANT]
