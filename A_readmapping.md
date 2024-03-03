@@ -45,7 +45,7 @@ Options:
   SplitLanesByFilenames: yes
   # Compression format for FASTQ reads; 'gz' for GZip, 'bz2' for BZip2
   CompressionFormat: bz2
-
+...
 ```
 
 Here is a brief description of the different steps that `paleomix` executes and dependencies it relies upon, amnd how to configure the \*.yaml file for each step accordingly:
