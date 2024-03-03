@@ -68,7 +68,7 @@ Column four: Nucleotides per line in the reference genome (this number will be e
 Column five: Bytes per line the reference genome.
 ```
 
-To set the reference genome, all that is needed is to specify a path where the reference genome (\*.fasta format, sequential) is located. 
+To set the reference genome, all that is needed is to specify a path where the reference genome (\*.fasta format, sequential) is located in the corresponding section of the \*.yaml file (see below). 
 
 ```yaml
 # Map of prefixes by name, each having a Path key, which specifies the
@@ -84,7 +84,7 @@ Prefixes:
     # should be named 'Human_g1k_v37').
     Path: PATH_TO_PREFIX
 ```
-For simplicity, in this tutorial we will work with a plastid reference genome of _Phoenix dactylifera_ (available in NCBI ewith accession number NC013991, also available in the `RefGenomes` folder of this repo and in your local machine). Replace "PATH_TO_PREFIX" with the absolute path and namefile as follows:
+For simplicity, in this tutorial we will work with a plastid reference genome of _Phoenix dactylifera_ (available in NCBI with accession number NC013991, also available in the `RefGenomes` folder of this repo and in your local machine). Replace "PATH_TO_PREFIX" with the absolute path and namefile as follows:
 
 ```yaml
     Path: /home/ontasia*/Documents/ONT-workshop-March-2024/RefGenomes/P_dactylifera_NC013991cp.fasta
