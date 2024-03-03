@@ -7,7 +7,7 @@ In this workshop, we will rely on the pipeline `paleomix` for read mapping and r
 
 `paloemix` requires as input \*.fastq files and a reference genome (in fasta format). Two great advantages of `paleomix` are:
 
-**a) easy automation:** hundreds of read files can easily be set up for analysis through a configuration file (*.yaml format). The config file also offers multiple options for read mapping, including software and sensitivity thresholds. An example of a \*.yaml file can be found in the `BAM_CP` folder of this repo.
+**a) easy automation:** hundreds of read files can easily be set up for analysis through a configuration file (*.yaml format). The config file also offers multiple options for read mapping, including software and sensitivity thresholds. An example of a \*.yaml file can be found in the [BAM_CP](https://github.com/siriusb-nox/PopGen_DARWIN_2024/tree/main/BAM_CP) folder of this repo.
 
 **b) statistics generation:** summary files with detailed information on number of reads and bases processed, coverage, duplicated reads and more are provided by default, for every read file analysed.
 
