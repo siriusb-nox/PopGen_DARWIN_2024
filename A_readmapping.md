@@ -161,14 +161,52 @@ For read mapping, we will rely on the software `bwa`. `bwa` has three strategies
       # call(s), as described below for Bowtie2 below.
 ```
 
-Following read mapping with `bwa`, `samtools` will sort the \*.bam files (arrange the coordinates of the reads mapped against a reference). 
+Following read mapping with `bwa`, `samtools` will sort the \*.bam files (arrange the coordinates of the reads mapped against a reference). This a default step and there is no need to set it up in the \*.yaml file.
 
 **3. BAM file validation:**
-
-
+The last step towards the production of a \*.bam file is the validation step, conducted by the software `picard` and `samtools`. Here, the file gets indexed and then assessed for any fault in the formatting of the file. Again, it is conducted by default and there is no need to set it up in the \*.yaml file. 
 
 **4. Statistics:**
+The last step in the analysis consist on the generation of several report *.txt files, which provide useful information on the the number of read data filtered out, mapped, and coverage attained, among other statistics. The most important file is the one bearing the extension *.summary. Here is a sneak-preview of how this file looks like:
 
+```bash
+# Command:
+#     /usr/local/bin/paleomix bam_pipeline run mypaloemixfile.yaml
+#
+# Directory:
+#     /path/to/your/own/dir/
+#
+# Makefile:
+#     Filename: mypaloemixfile.yaml
+#     SHA1Sum:  30df0b7cd0263f6c483b2946deab70109a19b0d1
+#     MTime:    2020-10-30 19:16:40
+#
+# Genomes:
+#     Name               Label    Contigs    Size      Prefix
+#    P_dactylifera_NC013991cp.fasta    -        1          156905    /home/ontasia*/Documents/ONT-workshop-March-2024/RefGenomes/P_dactylifera_NC013991cp.fasta
+#
+# Regions Of Interest:
+#     Genome    ROI    Size    NFeatures    NIntervals    Path
+#
+#
+Target  Sample  Library Measure Value   # Description
+SRR106852_NC013991cp   *       *       lib_type        SE      # SE, PE, or * (for both)
+SRR106852_NC013991cp   *       *       seq_reads_se    158090383       # Total number of single-ended reads
+SRR106852_NC013991cp   *       *       seq_trash_se    68670252        # Total number of trashed reads
+SRR106852_NC013991cp   *       *       seq_trash_se_frac       0.434373367291  # Fraction of SE reads trashed
+SRR106852_NC013991cp   *       *       seq_retained_reads      89420131        # Total number of retained reads
+SRR106852_NC013991cp   *       *       seq_retained_nts        3251987190      # Total number of NTs in retained reads
+SRR106852_NC013991cp   *       *       seq_retained_length     36.3675064399   # Average number of NTs in retained reads
+
+SRR106852_NC013991cp   *       *       hits_raw(Clan_NC032008cp)       43229   # Total number of hits (prior to PCR duplicate filtering)
+SRR106852_NC013991cp   *       *       hits_raw_frac(Clan_NC032008cp)  0.000483437001451       # Total number of hits vs. total number of reads retained
+SRR106852_NC013991cp   *       *       hits_clonality(Clan_NC032008cp) 0.359943556409  # Fraction of hits that were PCR duplicates
+SRR106852_NC013991cp   *       *       hits_unique(Clan_NC032008cp)    27669   # Total number of hits (excluding any PCR duplicates)
+SRR106852_NC013991cp   *       *       hits_unique_frac(Clan_NC032008cp)       0.000309426967849       # Total number of unique hits vs. total number of reads retained
+SRR106852_NC013991cp   *       *       hits_coverage(Clan_NC032008cp)  5.67808546573   # Estimated coverage from unique hits
+SRR106852_NC013991cp   *       *       hits_length(Clan_NC032008cp)    32.1992121146   # Average number of aligned bases per unique hit
+...
+```
 
 ## Selected references
 1. Schubert M., et al. 2014. Characterisatyion of ancient DNA and modern genomes by SNP detection and phylogenomic and metagenomic analysis using PALEOMIX. [_Nat. Protoc_. 9: 1056](https://pubmed.ncbi.nlm.nih.gov/24722405/) 
