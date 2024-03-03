@@ -20,33 +20,7 @@ By default, `paleomix` should be already available in your `PATH`. To generate a
 paleomix bam_pipeline makefile > blank_makefile.yaml
 ```
 
-The file should look like this (**please read carefully the comments on the file [marked with "#"], which you can open in any text editor)**:
-
-```yaml
-# -*- mode: Yaml; -*-
-# Timestamp: 2024-03-03T15:29:36.611911
-#
-# Default options.
-# Can also be specific for a set of samples, libraries, and lanes,
-# by including the "Options" hierarchy at the same level as those
-# samples, libraries, or lanes below. This does not include
-# "Features", which may only be specific globally.
-Options:
-  # Sequencing platform, see SAM/BAM reference for valid values
-  Platform: Illumina
-  # Quality offset for Phred scores, either 33 (Sanger/Illumina 1.8+)
-  # or 64 (Illumina 1.3+ / 1.5+). For Bowtie2 it is also possible to
-  # specify 'Solexa', to handle reads on the Solexa scale. This is
-  # used during adapter-trimming and sequence alignment
-  QualityOffset: 33
-  # Split a lane into multiple entries, one for each (pair of) file(s)
-  # found using the search-string specified for a given lane. Each
-  # lane is named by adding a number to the end of the given barcode.
-  SplitLanesByFilenames: yes
-  # Compression format for FASTQ reads; 'gz' for GZip, 'bz2' for BZip2
-  CompressionFormat: bz2
-...
-```
+**Please read carefully the comments on the file [marked with "#"], which it can open in any text editor.**
 
 Here is a brief description of the different steps that `paleomix` executes and dependencies it relies upon, amnd how to configure the \*.yaml file for each step accordingly:
 
