@@ -9,7 +9,11 @@ In this workshop, we will rely on the pipeline `paleomix` for read mapping and r
 
 Here is a brief description of the different steps that PALEOMIX executes and dependencies it relies upon:
 
-1. 
+1. Reference genome indexing:
+2. Read trimming:
+3. Read mapping:
+4. BAM file validation:
+5. Statistics:
 
 ## Selected references
 1. Schubert M., et al. 2014. Characterisatyion of ancient DNA and modern genomes by SNP detection and phylogenomic and metagenomic analysis using PALEOMIX. [_Nat. Protoc_. 9: 1056](https://pubmed.ncbi.nlm.nih.gov/24722405/) 
