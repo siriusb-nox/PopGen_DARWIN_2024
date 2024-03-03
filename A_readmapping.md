@@ -139,6 +139,7 @@ Where `{Pair}` will be interpreted as the characters `1` or `2`.
 **3. BAM file validation:**
 
 
+
 **5. Statistics:**
 
 
