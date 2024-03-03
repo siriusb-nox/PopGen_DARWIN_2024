@@ -23,7 +23,7 @@ paleomix bam_pipeline makefile > blank_makefile.yaml
 >[!IMPORTANT]
 >**Please read carefully the comments on the file (marked with "#"), which it can open in any text editor.**
 
-Here is a brief description of the different steps that `paleomix` executes and dependencies it relies upon, amnd how to configure the \*.yaml file for each step accordingly:
+Here is a brief description of the different steps that `paleomix` executes and dependencies it relies upon, and how to configure the \*.yaml file for each step accordingly:
 
 **1. Reference genome indexing:** in this step, `paleomix` produces a index (\*.fai file) of the reference genome (\*.fasta format) through the program `samtools`. A genome index \*.fai file is a tab delimited file and looks like this:
 
@@ -65,7 +65,7 @@ For simplicity, in this tutorial we will work with a plastid reference genome of
     Path: /home/ontasia*/Documents/ONT-workshop-March-2024/RefGenomes/P_dactylifera_NC013991cp.fasta
 ```
 
-**2. Read trimming and mapping:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. When using raw \*.fastq files as input, the adapter sequences need to be provided, as well as the quality offset (i.e., [Phred33, or Phred64](https://www.drive5.com/usearch/manual/quality_score.html)). 
+**2. Read trimming and mapping:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. When using raw \*.fastq files as input, the adapter sequences need to be provided, as well as the quality offset (i.e., [Phred33, or Phred64].(https://www.drive5.com/usearch/manual/quality_score.html)). 
 
 ```yaml
 Options:
