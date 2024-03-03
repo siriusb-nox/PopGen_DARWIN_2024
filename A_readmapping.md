@@ -5,7 +5,7 @@ Read filtering and trimming do remove low quaility bases (as defined by a qualit
   
 In this workshop, we will rely on the pipeline `paleomix` for read mapping and realigning. `paloemix` is an easy-to-use pipeline specilaised on the analysis of high-throughput sequencing (HTS) data derived from Illumina platforms. While this wrapper is tailored to work with data derived from ancient DNA samples, it can also handle high-quality sequencing data. It conducts read trimming/filtering and mapping against a reference genome, producing as output BAM files. 
 
-`paloemix` requires as input \*.fastq files and a reference genome (in fasta format). Two great advantages of `paleomix` are:
+`paleomix` requires as input \*.fastq files and a reference genome (in fasta format). Two great advantages of `paleomix` are:
 
 **a) easy automation:** hundreds of read files can easily be set up for analysis through a configuration file (*.yaml format). The config file also offers multiple options for read mapping, including software and sensitivity thresholds. An example of a \*.yaml file can be found in the [BAM_CP](https://github.com/siriusb-nox/PopGen_DARWIN_2024/tree/main/BAM_CP) folder of this repo.
 
@@ -91,6 +91,10 @@ For simplicity, in this tutorial we will work with a plastid reference genome of
 ```
 
 **2. Read trimming:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. 
+
+
+
+
 
 3. Read mapping:
 4. BAM file validation:
