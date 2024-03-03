@@ -19,7 +19,7 @@ This tutorial requires the following programs/dependencies (it is highly recomme
 ## 2. Workshop structure
 This tutorial is divided into three steps:
 
-A. **Read trimming, mapping and realigning**
+A. [**Read trimming, mapping and realigning**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/A_readmapping.md)
 
 B. **Genotype Likelihood analisys**
 
