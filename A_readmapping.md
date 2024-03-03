@@ -20,7 +20,7 @@ By default, `paleomix` should be already available in your `PATH`. To generate a
 paleomix bam_pipeline makefile > blank_makefile.yaml
 ```
 
-The file should look like this:
+The file should look like this (**please read carefully the comments on the file (marked with "#"), which you can open in any text editor**:
 
 ```yaml
 # -*- mode: Yaml; -*-
