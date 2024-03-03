@@ -122,7 +122,23 @@ Options:
      --trimns: yes
      --trimqualities: yes
 ```
-We won't go into much detail on read trimming/filtered since we will be working with trimmed read data (be aware that up to this date, skipping the trimming in `paleomix` is not allowed). Now, the mapping relies on two programs, `bwa` or `bowtie2`.   
+We won't go into much detail on read trimming/filtered since we will be working with trimmed read data (be aware that up to this date, skipping the trimming in `paleomix` is not allowed). Now, the mapping relies on two programs, `bwa` or `bowtie2`. Whichever program is chosen, different parameters can be set to define the sensitivity of the mapping, but first the input \*.fastq files and samples names need to be specified. This is done as the last section of the file. 
+
+```yaml
+# Mapping targets are specified using the following structure. Uncomment and
+# replace 'NAME_OF_TARGET' with the desired prefix for filenames.
+NAME_OF_TARGET:
+   #  Uncomment and replace 'NAME_OF_SAMPLE' with the name of this sample.
+  NAME_OF_SAMPLE:
+     #  Uncomment and replace 'NAME_OF_LIBRARY' with the name of this sample.
+    NAME_OF_LIBRARY:
+       # Uncomment and replace 'NAME_OF_LANE' with the name of this lane,
+       # and replace 'PATH_WITH_WILDCARDS' with the path to the FASTQ files
+       # to be trimmed and mapped for this lane (may include wildcards).
+      NAME_OF_LANE: PATH_WITH_WILDCARDS
+```
+
+
 
 **3. BAM file validation:**
 
