@@ -128,7 +128,13 @@ SRR106852_NC013991cp:
        # to be trimmed and mapped for this lane (may include wildcards).
       NAME_OF_LANE: /home/ontasia*/Document/ONT-workshop-March-2024/fastq/SRR106852_1.fastq
 ```
+For simplicity, we will a use single mate from a paired-end file. Paired files can also be set, using the following notation:
 
+```yaml
+      NAME_OF_LANE: /home/ontasia*/Document/ONT-workshop-March-2024/fastq/SRR106852_{Pair}.fastq
+```
+
+Where `{Pair}` will be interpreted as the characters `1` or `2`.
 
 **3. BAM file validation:**
 
