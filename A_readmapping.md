@@ -24,11 +24,11 @@ gi|394055771|gb|AGTA02000004.1|    1190    13027    70    71
 
 Where:
 
-  **Column one:** indicates the contig name in the reference genome.
-  **Column two:** number of nucleotides in the contig.
-  **Column three:** Byte index of the document where the contig sequence begins.
-  **Column four:** Nucleotides per line in the reference genome (this number will be equal to the number of nucleotides in the contig when the fasta file is sequential (as opposed to interleaved).
-  **Column five:** Bytes per line the reference genome.
+  **Column one:** indicates the contig name in the reference genome.\n
+  **Column two:** number of nucleotides in the contig.\n
+  **Column three:** Byte index of the document where the contig sequence begins.\n
+  **Column four:** Nucleotides per line in the reference genome (this number will be equal to the number of nucleotides in the contig when the fasta file is sequential (as opposed to interleaved).\n
+  **Column five:** Bytes per line the reference genome.\n
 
 2. Read trimming:
 3. Read mapping:
