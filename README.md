@@ -30,7 +30,7 @@ C. **Principal component and Admixture/structure**
 **Figure 1**: Simplified view of tutorial/pipeline
 
 >[!IMPORTANT]
->**The base data needed to run this tutorial is available in the different subfolders of this repo (e.g., `XX` and `YY`), which will be copied in your local machine.**
+>**The base data needed to run this tutorial is available in the different subfolders of this repo (e.g., `/home/ontasia*/Documents/ONT-workshop-March-2024/fastq/` and `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP/`), which will be copied in your local machine.**
 
 ## 2.1. Pipeline configuration
 In any bioinformatics pipeline, it is essential to relate which programs the pipeline depends on. All the files needed to execute this tutorial are available at `/home/ontasia*/Documents`.
