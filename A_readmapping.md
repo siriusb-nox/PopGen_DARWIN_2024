@@ -113,6 +113,21 @@ NAME_OF_TARGET:
       NAME_OF_LANE: PATH_WITH_WILDCARDS
 ```
 
+Here, repalce 'NAME_OF_TARGET' by a unique sample name. Usually I choose a mix between the sample name and the reference genome I am using as a target, e.g., `SRR106852_NC013991cp`. This is the most important parameter to set since the output files will be stored in a folder with such a name. The parameters `NAME_OF_SAMPLE`, `NAME_OF_LIBRARY`, `NAME_OF_LANE` can also be set at your own choice. I usually use `MySample` for `NAME_OF_SAMPLE`, and `SRR106852` for `NAME_OF_LIBRARY`. Lastly, on `NAME_OF_LANE`, specify the place where the trimmed fastq files are. For this workshop, we will rely on the files stored at `/home/ontasia*/Document/ONT-workshop-March-2024/fastq` The file should look like this:
+
+```yaml
+# Mapping targets are specified using the following structure. Uncomment and
+# replace 'NAME_OF_TARGET' with the desired prefix for filenames.
+SRR106852_NC013991cp:
+   #  Uncomment and replace 'NAME_OF_SAMPLE' with the name of this sample.
+  MySample:
+     #  Uncomment and replace 'NAME_OF_LIBRARY' with the name of this sample.
+    SRR106852:
+       # Uncomment and replace 'NAME_OF_LANE' with the name of this lane,
+       # and replace 'PATH_WITH_WILDCARDS' with the path to the FASTQ files
+       # to be trimmed and mapped for this lane (may include wildcards).
+      NAME_OF_LANE: /home/ontasia*/Document/ONT-workshop-March-2024/fastq/SRR106852_1.fastq
+```
 
 
 **3. BAM file validation:**
