@@ -7,13 +7,13 @@ In this workshop, we will rely on the pipeline `paleomix` for read mapping and r
 
 `paloemix` requires as input \*.fastq files and a reference genome (in fasta format). Two great advantages of `paleomix` are:
 
-**a) easy automation:** hundreds of read files can easily be set up for analysis through a configuration file (*.yaml format). The config file also offers multiple options for read mapping, including software and sensitivity thresholds. 
+**a) easy automation:** hundreds of read files can easily be set up for analysis through a configuration file (*.yaml format). The config file also offers multiple options for read mapping, including software and sensitivity thresholds. An example of a \*.yaml file can be found in the `BAM_CP` folder of this repo.
 
 **b) statistics generation:** summary files with detailed information on number of reads and bases processed, coverage, duplicated reads and more are provided by default, for every read file analysed.
 
 Here is a brief description of the different steps that `paleomix` executes and dependencies it relies upon:
 
-1. Reference genome indexing: in this step, `paleomix` produces a index (\*.fai file) of the reference genome (\*.fasta format) through the program `samtools`. A genome index \*.fai file is a tab delimited file and looks like this:
+**1. Reference genome indexing:** in this step, `paleomix` produces a index (\*.fai file) of the reference genome (\*.fasta format) through the program `samtools`. A genome index \*.fai file is a tab delimited file and looks like this:
 
 ```
 gi|394055774|gb|AGTA02000001.1|    5516    93    70    71
@@ -30,7 +30,8 @@ Column three: Byte index of the document where the contig sequence begins.
 Column four: Nucleotides per line in the reference genome (this number will be equal to the number of nucleotides in the contig when the fasta file is sequential (as opposed to interleaved).
 Column five: Bytes per line the reference genome.
 ```
-2. Read trimming:
+**2. Read trimming:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. 
+
 3. Read mapping:
 4. BAM file validation:
 5. Statistics:
