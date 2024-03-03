@@ -136,7 +136,7 @@ For simplicity, we will a use single mate from a paired-end file. Paired files c
 
 Where `{Pair}` will be interpreted as the characters `1` or `2`.
 
-For read mapping, we will rely on the software `bwa`. `bwa` has three strategies to map reads: MEM, backtrack and bwa-sw. We will use the MEM strategy which is tailored for reads that are longer > 70 bp (i.e., reads produced from freshly sequenced samples). A mapping quality can also be set at `MinQuality:`. 
+For read mapping, we will rely on the software `bwa`. `bwa` has three strategies to map reads: MEM, backtrack and bwa-sw. We will use the MEM strategy which is tailored for reads that are longer > 70 bp (i.e., reads produced from freshly sequenced samples). A mapping quality can also be set at `MinQuality`, which is here defined by in how many different positions a read can align in a genome. The higher the threshold, the more unique positions the read will map (i.e., reads won't be mapped in repeated positions). Here, we will use a threshold of 0 in order to avoid excluding the inverted repeats from the analysis.
 
 ```yaml
 # Settings for aligners supported by the pipeline
