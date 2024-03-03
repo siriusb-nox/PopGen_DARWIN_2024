@@ -136,7 +136,31 @@ For simplicity, we will a use single mate from a paired-end file. Paired files c
 
 Where `{Pair}` will be interpreted as the characters `1` or `2`.
 
-For read mapping, we will rely on the software `bwa`.
+For read mapping, we will rely on the software `bwa`. `bwa` has three strategies to map reads: MEM, backtrack and bwa-sw. We will use the MEM strategy which is tailored for reads that are longer > 70 bp (i.e., reads produced from freshly sequenced samples). A mapping quality can also be set at `MinQuality:`. 
+
+```yaml
+# Settings for aligners supported by the pipeline
+  Aligners:
+    # Choice of aligner software to use, either "BWA" or "Bowtie2"
+    Program: bwa
+
+    # Settings for mappings performed using BWA
+    BWA:
+      # One of "backtrack", "bwasw", or "mem"; see the BWA documentation
+      # for a description of each algorithm (defaults to 'backtrack')
+      Algorithm: mem
+      # Filter aligned reads with a mapping quality (Phred) below this value
+      MinQuality: 0
+      # Filter reads that did not map to the reference sequence
+      FilterUnmappedReads: yes
+      # May be disabled ("no") for aDNA alignments with the 'aln' algorithm.
+      # Post-mortem damage localizes to the seed region, which BWA expects to
+      # have few errors (sets "-l"). See http://pmid.us/22574660
+      UseSeed: yes
+      # Additional command-line options may be specified for the "aln"
+      # call(s), as described below for Bowtie2 below.
+```
+
 
 **3. BAM file validation:**
 
