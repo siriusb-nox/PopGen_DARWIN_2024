@@ -122,8 +122,7 @@ Options:
      --trimns: yes
      --trimqualities: yes
 ```
-
-The mapping relies on two programs, `bwa` or `bowtie2`.  
+We won't go into much detail on read trimming/filtered since we will be working with trimmed read data (be aware that up to this date, skipping the trimming in `paleomix` is not allowed). Now, the mapping relies on two programs, `bwa` or `bowtie2`.   
 
 **3. BAM file validation:**
 
