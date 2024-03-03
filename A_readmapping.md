@@ -136,6 +136,8 @@ For simplicity, we will a use single mate from a paired-end file. Paired files c
 
 Where `{Pair}` will be interpreted as the characters `1` or `2`.
 
+For read mapping, we will rely on the software `bwa`.
+
 **3. BAM file validation:**
 
 
