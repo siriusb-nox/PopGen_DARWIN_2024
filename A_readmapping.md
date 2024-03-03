@@ -22,6 +22,12 @@ gi|394055772|gb|AGTA02000003.1|    4668    8199    70    71
 gi|394055771|gb|AGTA02000004.1|    1190    13027    70    71
 ```
 
+Where:
+
+```
+**Column one:**  
+```
+
 2. Read trimming:
 3. Read mapping:
 4. BAM file validation:
