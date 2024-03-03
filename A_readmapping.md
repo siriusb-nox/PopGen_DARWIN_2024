@@ -90,8 +90,40 @@ For simplicity, in this tutorial we will work with a plastid reference genome of
     Path: /home/ontasia*/Documents/ONT-workshop-March-2024/RefGenomes/P_dactylifera_NC013991cp.fasta
 ```
 
-**2. Read trimming and mapping:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. 
+**2. Read trimming and mapping:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. When using raw \*.fastq files as input, the adapter sequences need to be provided, as well as the quality offset (i.e., [Phred33, or Phred64](https://www.drive5.com/usearch/manual/quality_score.html)). 
 
+```yaml
+Options:
+  # Sequencing platform, see SAM/BAM reference for valid values
+  Platform: Illumina
+  # Quality offset for Phred scores, either 33 (Sanger/Illumina 1.8+)
+  # or 64 (Illumina 1.3+ / 1.5+). For Bowtie2 it is also possible to
+  # specify 'Solexa', to handle reads on the Solexa scale. This is
+  # used during adapter-trimming and sequence alignment
+  QualityOffset: 33
+  # Split a lane into multiple entries, one for each (pair of) file(s)
+  # found using the search-string specified for a given lane. Each
+  # lane is named by adding a number to the end of the given barcode.
+  SplitLanesByFilenames: yes
+  # Compression format for FASTQ reads; 'gz' for GZip, 'bz2' for BZip2
+  CompressionFormat: bz2
+
+  # Settings for trimming of reads, see AdapterRemoval man-page
+  AdapterRemoval:
+     # Adapter sequences, set and uncomment to override defaults
+#     --adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG
+#     --adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT
+     # Some BAM pipeline defaults differ from AR defaults;
+     # To override, change these value(s):
+     --mm: 3
+     --minlength: 25
+     # Extra features enabled by default; change 'yes' to 'no' to disable
+     --collapse: yes
+     --trimns: yes
+     --trimqualities: yes
+```
+
+The mapping relies on two programs, `bwa` or `bowtie2`.  
 
 **3. BAM file validation:**
 
