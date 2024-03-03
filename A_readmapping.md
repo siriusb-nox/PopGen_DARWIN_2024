@@ -90,15 +90,14 @@ For simplicity, in this tutorial we will work with a plastid reference genome of
     Path: /home/ontasia*/Documents/ONT-workshop-March-2024/RefGenomes/P_dactylifera_NC013991cp.fasta
 ```
 
-**2. Read trimming:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. 
+**2. Read trimming and mapping:** `paleomix` relies on `adapterremoval` to filter out low quality nucleotides and adapters from \*.fastq files. 
 
 
+**3. BAM file validation:**
 
 
+**5. Statistics:**
 
-3. Read mapping:
-4. BAM file validation:
-5. Statistics:
 
 ## Selected references
 1. Schubert M., et al. 2014. Characterisatyion of ancient DNA and modern genomes by SNP detection and phylogenomic and metagenomic analysis using PALEOMIX. [_Nat. Protoc_. 9: 1056](https://pubmed.ncbi.nlm.nih.gov/24722405/) 
