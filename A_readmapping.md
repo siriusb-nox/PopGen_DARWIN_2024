@@ -161,12 +161,13 @@ For read mapping, we will rely on the software `bwa`. `bwa` has three strategies
       # call(s), as described below for Bowtie2 below.
 ```
 
+Following read mapping with `bwa`, `samtools` will sort the \*.bam files (arrange the coordinates of the reads mapped against a reference). 
 
 **3. BAM file validation:**
 
 
 
-**5. Statistics:**
+**4. Statistics:**
 
 
 ## Selected references
