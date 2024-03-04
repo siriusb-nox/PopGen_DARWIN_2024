@@ -61,11 +61,17 @@ As an output, the command will produce (per analysed ancestral population):
 **b)** a \*.fopt file, where allele frequences on the assumed ancestral populations are provided
 **c)** a \*.qopt file, with the estimated admixture proportions per individuals. These files are needes as input for the bar plot in R. 
 
+A traditional admixture plot presents the proportions (from 0-100, y-axis) of genomic ancestry for each individual (x-axis) across multiple assumed ancestral populations (see Figure 2 for an example).  
+
+![Figure 2]([https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/32S_PCAngsd.CP.jpg](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/Admix_32S_NUC.jpg))
+**Figure 2**. Population structure analyses of 32 individuals of date palms as inferred from nuclear GLs and 2-6 assumed ancestral populatuions. 
+
 >[!CAUTION]
 >**Admixture models assume that GLs have been computed from recombinant genomic regions (i.e., not plastids!). Here, we are estimating Amdixture on GLs derived from a plastid dataset for simplicity.**
 
 ## $\color{orange}{\textsf{C. ACTIVITY}}$
-1. Conduct a PCA and an admixture analysis
+1. Conduct a PCA and an admixture analysis on the `genolike.32s.CP.beagle.gz` file provided at the directory `/home/ontasia*/Documents/ONT-workshop-March-2024/ANGSD/CP_SRA_26796/NGSADMIX/`.
+2. Plot the results of PCA and NGSadmix in R.
 
 
 ## Selected references
