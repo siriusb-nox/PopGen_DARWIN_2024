@@ -26,8 +26,11 @@ As an output, the command will produce a \*.cov file, which can be used as input
 
 
 ## B. Admixture/Structure analysis from GLs
-. Admixture analyses will be conducted on the package `NGSadmix`, an associated software to `angsd`.
+Another important aspect of population genomics the understanding of how populations exchange genetic material and at which proportions. Admixture analysis is then useful to trave the ancestry of admixed proportions of a genome in a given individual, thus allowing to clasify indivduals of unknown ancestry into discrete populations.
 
+In this tutorial, we will infer admixture through the package `NGSadmix`, an associated software to `angsd`.
+
+To execute `NGSadmix`, run the following command:
 
 ```bash
 while read K; do NGSadmix -likes genolike.beagle.gz -K $K -outfiles ${K}.NGSadmix.out -printInfo 1 -minMaf 0.05 -P 8; done < clusters.k
