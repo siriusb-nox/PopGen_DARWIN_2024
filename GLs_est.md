@@ -69,7 +69,7 @@ SRR6439415_NC013991cp.NC013991cp.realigned.bam
 ```
 
 >[!IMPORTANT]
->`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**.  
+>`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**, regardless of the model of choice to compute the GLs. This is a limitation if you find yourself working with polyploid genomes.  
 
 One advantage of `angsd` is the flexibility it offers in terms of filtering input datasets. This is possible by estimating the frequency of bases per position across a panel of individuals `(flag -doCounts)`. Once such frequencies are produced, we can remove bases below a given quality threshold `(-minQ)`, remove reads below a given mapping quality `(-minMapQ)`, and even exclude sites from analysis that have below a costumised minimum `(-setMinDepth)` and above maximum `(-setMaxDepth)` sequencing coverage. 
 
