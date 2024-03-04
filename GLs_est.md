@@ -22,6 +22,12 @@ In general, given the nature of most datasets (i.e., low sequencing coverage for
 
 We will use `angsd` to infer GLs from a the BAM files produced by `paleomix`. `angsd` (abbreviation of Analysis of Next Generation Sequencing Data) is a versatile software widely used for analyzing genomic data generated from HTS technologies. It can estimate GLs and produce different metrics, including Fst, Site Frequency Spectrum (SFS), Tajima's D, amongst others. 
 
+To compute GLs, `angsd` requires as input a tab-delimited text file with the names of the \*.bam files that will be included in the analysis. Here is an example of a command we could use to compute GLs from our bam files.
+
+```bash
+angsd -GL 2 -out genolike -nThreads 20 -doGlf 2 -doMajorMinor 1 -SNP_pval 1e-6 -doMaf 1 -bam bam.filelist
+```
+
 >[!IMPORTANT]
 >`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**.  
 
