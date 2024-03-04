@@ -74,7 +74,7 @@ One advantage of `angsd` is the flexibility it offers in terms of filtering inpu
 
 ## C. ACTIVITY
 
-Using the command provided above, please compute GLs from the set of BAM files available in the folder `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP/`. NB: you need to first produce the `bam.filelist` (**hint: use `ls *.bam > bam.filelist`.
+Using the command provided above, please compute GLs from the set of BAM files available in the folder `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP/`. NB: you need to first produce the `bam.filelist` (**hint: use** `ls *.bam > bam.filelist`.
 
 
 ## Selected references
