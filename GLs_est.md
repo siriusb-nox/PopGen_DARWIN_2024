@@ -72,9 +72,7 @@ SRR6439415_NC013991cp.NC013991cp.realigned.bam
 
 One advantage of `angsd` is the flexibility it offers in terms of filtering input datasets. This is possible by estimating the frequency of bases per position across a panel of individuals `(flag -doCounts)`. Once such frequencies are produced, we can remove bases below a given quality threshold `(-minQ)`, remove reads below a given mapping quality `(-minMapQ)`, and even exclude sites from analysis that have below a costumised minimum `(-setMinDepth)` and above maximum `(-setMaxDepth)` sequencing coverage. 
 
-```diff
-## - C. ACTIVITY
-```
+## $\color{orange}{\textsf{C. ACTIVITY}}$
 
 1. Using the command provided above, please compute GLs from the set of BAM files available in the folder `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP/`. NB: you need to first produce the `bam.filelist` (**hint: use** `ls *.bam > bam.filelist`).
 
