@@ -26,8 +26,22 @@ As an output, the command will produce a \*.cov file, which can be used as input
 
 
 ## B. Admixture/Structure analysis from GLs
-Admixture analyses will be conducted on the package `NGSadmix`, an associated software to `angsd`.
+. Admixture analyses will be conducted on the package `NGSadmix`, an associated software to `angsd`.
 
+
+```bash
+while read K; do NGSadmix -likes genolike.beagle.gz -K $K -outfiles ${K}.NGSadmix.out -printInfo 1 -minMaf 0.05 -P 8; done < clusters.k
+```
+
+where
+
+```bash
+-likes # This parameter specifies the input beagle file (GLs)
+-K # This paremeter indicates the number of assumed ancestral populations that will be modeled. It an range from 1 to any number of your choice.,
+-minMaf # This parameter indicates the minimum minor allele frequency (is a filtering criterium).
+-P # This parameter specifies the number of threads to use for parallel processing. Increase this parameter whenever working with large genomes and many individuals.
+-outfiles # This parameter indicates a prefix that will be assigned to the output files.
+```
 
 ## $\color{orange}{\textsf{C. ACTIVITY}}$
 
