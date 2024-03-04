@@ -1,4 +1,4 @@
-## A. Genotype Likelihood estimation
+## A. Genotype Likelihood estimation - brief background
 
 Having the outputs from read mapping for every sample (\*.bam files) we can then proceed with the estimation of variants or genotype likelihoods (GLs). On population genetics, there are a number of differences when it comes to choose working with variants or GLs, summarised in the table as follows:
 
@@ -16,6 +16,9 @@ In general, given the nature of most datasets (i.e., low sequencing coverage for
 >
 >![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/pone.0079667.g001.png)
 >**Figure 1**: Bias in the estimation of segregating sites and expected _Hz_ under different sampling levels. Notice how less bias estimations are whenever many individuals are sampled at lower sequencing depths (1x) (taken from Fumagalli, 2013)
+
+
+## B. Genotype Likelihood estimation - analysis
 
 We will use `angsd` to infer GLs from a the BAM files produced by `paleomix`. 
 
