@@ -24,7 +24,7 @@ A. [**Read trimming, mapping and validation**](https://github.com/siriusb-nox/Po
 
 B. [**Genotype Likelihood analysis**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/B_GLs_est.md)
 
-C. **Principal component and Admixture/structure**
+C. [**Principal component and Admixture/structure**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/C_PCa_NGSAdmix.md)
 
 ![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/pipeline_OP_v1.jpg)
 **Figure 1**: Simplified view of tutorial/pipeline
