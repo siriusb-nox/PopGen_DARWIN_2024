@@ -15,7 +15,10 @@ In general, given the nature of most datasets (i.e., low sequencing coverage for
 >**GLs (or variants) can be calculated from any set of individuals and different sequencing depths. The same can be told of almost any population genomics metric (e.g., Heterozygosity, Effective population size, etc). What determines how biased your estimations are will depend on how robust your sampling is how well sampled your populations are. Here, a good sampling is defined by how well represented the genetic diversity of your populations are, instead of how well sequenced each individula is. In other words, sequencing many more individuals across the spectrum of a population at lower depths is better than sequencing few individuals at deeper representations (see Figure 1 below)**
 >
 >![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/pone.0079667.g001.png)
->**Figure 1**: Bias in the estimation of segregating sites and expected Hz under different sampling levels. Notice how less bias estimations are whenever many individuals are sampled at lower sequencing depths (1x) (taken from Fumagalli, 2013)
+>**Figure 1**: Bias in the estimation of segregating sites and expected _Hz_ under different sampling levels. Notice how less bias estimations are whenever many individuals are sampled at lower sequencing depths (1x) (taken from Fumagalli, 2013)
+
+We will use `angsd` to infer GLs from a the BAM files produced by `paleomix`. 
+
 
 ## Selected references
 1. Fumagalli M. 2013. Assessing the Effect of Sequencing Depth and Sample Size in Population Genetics Inferences. [_PLoS ONE 8:e79667_](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0079667&type=printable)
