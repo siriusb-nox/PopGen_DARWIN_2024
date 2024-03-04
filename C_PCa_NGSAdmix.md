@@ -4,7 +4,7 @@ One important aspect in population genomics is the understanding of how multiple
 In this tutorial, we will conduct PCA analyses through the package `PCAngsd`, an associated software to `angsd`.
 
 >[!CAUTION]
->**PCA analyses are not meant to clasify individuals into discrete populations, but rather understand how much genetic variation there is between individuals and populations along axes.**
+>**PCA analyses are not meant to be used as tools for clasification of individuals into discrete populations. They are rather a convenient mean to help understanding how much genetic variation there is between individuals and populations along axes.**
 
 
 ## B. Admixture/Structure analysis from GLs
