@@ -9,7 +9,14 @@ Having the outputs from read mapping for every sample (\*.bam files) we can then
 | GLs are often estimated using statistical models that take into account factors such as base quality scores, read mapping quality, and sequencing depth | Variants are typically characterized by their genomic position, the reference allele (the allele found in the reference genome), and the alternative allele (the observed variant allele) |
 | GLs are especially useful in situations where sequencing data may be noisy or ambiguous, such as in low-coverage or ancient DNA sequencing experiments | Variants are commonly represented in variant call format (VCF) files, which provide information about variant type, genomic coordinates, allele frequencies, and other annotations |
 
-In general, given the nature of most datasets (i.e., low sequencing coverage for most individuals amongst populations), it is best to work with probabilistic frameworks such as GLs which are inferred **for a collection of individuals (as opposed to inferences on variants/GLs conducted on single individuals)**. As such, in this workshop, we will work with GLs from which we will then derive analyses that can reveal relatedness and ancestry of individuals sampled from different species. One very important aspect to remember is that...
+In general, given the nature of most datasets (i.e., low sequencing coverage for most individuals amongst populations), it is best to work with probabilistic frameworks such as GLs which are inferred **for a collection of individuals (as opposed to inferences on variants/GLs conducted on single individuals)**. As such, in this workshop, we will work with GLs from which we will then derive analyses that can reveal relatedness and ancestry of individuals sampled from different species. 
+
+>[!IMPORTANT]
+>**GLs (or variants) can be calculated from any set of individuals and different sequencing depths. The same can be told of almost any population genomics metric (e.g., Heterozygosity, Effective population size, etc). What determines how biased your estimations are will depend on how robust your sampling is how well sampled your populations are. Here, a good sampling is defined by how well represented the genetic diversity of your populations are, instead of how well sequenced each individula is. In other words, sequencing many more individuals across the spectrum of a population at lower depths is better than sequencing few individuals at deeper representations**
+
+
+
+
 
 ## Selected references
-1. Fumagalli M. 2013. Assessing the Effect of Sequencing Depth and Sample Size in Population Genetics Inferences. [PLoS ONE 8:e79667](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0079667&type=printable)
+1. Fumagalli M. 2013. Assessing the Effect of Sequencing Depth and Sample Size in Population Genetics Inferences. [_PLoS ONE 8:e79667_](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0079667&type=printable)
