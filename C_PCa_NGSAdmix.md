@@ -55,10 +55,14 @@ the `clusters.k` file should look like this:
 ...
 ```
 
-As an output, the command will produce a \*.cov file, which can be used as input in R to produce a dotplot and visualise genetic variation of individuals in two dimensions (see Figure 1 for an example on the plot that can be produced in R through the `ggplot2` package).
+As an output, the command will produce (per analysed ancestral population): 
+
+**a)** a \*.log file where the number of individuals, sites analysed and filtered out, and likelihoods are provided. 
+**b)** a \*.fopt file, where allele frequences on the assumed ancestral populations are provided
+**c)** a \*.qopt file, with the estimated admixture proportions per individuals. These files are needes as input for the bar plot in R. 
 
 >[!CAUTION]
->**PCA analyses are not meant to be used as tools for clasification of individuals into discrete populations. They are rather a convenient mean to help understanding how much genetic variation there is between individuals and populations along axes.**
+>**Admixture models assume that GLs have been computed from recombinant genomic regions (i.e., not plastids!). Here, we are estimating Amdixture on GLs derived from a plastid dataset for simplicity.**
 
 ## $\color{orange}{\textsf{C. ACTIVITY}}$
 1. Conduct a PCA and an admixture analysis
