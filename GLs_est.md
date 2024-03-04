@@ -76,7 +76,7 @@ One advantage of `angsd` is the flexibility it offers in terms of filtering inpu
 
 1. Using the command provided above, please compute GLs from the set of BAM files available in the folder `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP/`. NB: you need to first produce the `bam.filelist` (**hint: use** `ls *.bam > bam.filelist`).
 
-2. How many sites were analysed and how many were kept for GL estimation?
+2. How many sites were input and how many were kept by angsd for GL estimation?
 
 
 ## Selected references
