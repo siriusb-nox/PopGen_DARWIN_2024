@@ -22,7 +22,7 @@ This tutorial is divided into three steps:
 
 A. [**Read trimming, mapping and validation**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/A_readmapping.md)
 
-B. [**Genotype Likelihood analisys**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/GLs_est.md)
+B. [**Genotype Likelihood analisys**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/B_GLs_est.md)
 
 C. **Principal component and Admixture/structure**
 
