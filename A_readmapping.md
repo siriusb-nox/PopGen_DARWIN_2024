@@ -20,7 +20,7 @@ By default, `paleomix` should be already available in your `PATH`. To generate a
 paleomix bam_pipeline makefile > blank_makefile.yaml
 ```
 
->[!IMPORTANT]
+>[!NOTE]
 >**Please read carefully the comments on the file (marked with "#"), which it can open in any text editor.**
 
 Here is a brief description of the different steps that `paleomix` executes and dependencies it relies upon, and how to configure the \*.yaml file for each step accordingly:
@@ -128,7 +128,7 @@ SRR106852_NC013991cp:
        # to be trimmed and mapped for this lane (may include wildcards).
       NAME_OF_LANE: /home/ontasia*/Document/ONT-workshop-March-2024/fastq/SRR106852_1.fastq
 ```
-For simplicity, we will a use single mate from a paired-end file. Paired files can also be set, using the following notation:
+For simplicity, we will a use single mate from a paired-end file. Paired files can also be set though, using the following notation:
 
 ```yaml
       NAME_OF_LANE: /home/ontasia*/Document/ONT-workshop-March-2024/fastq/SRR106852_{Pair}.fastq
@@ -208,9 +208,11 @@ SRR106852_NC013991cp   *       *       hits_length(Clan_NC032008cp)    32.199212
 ...
 ```
 
-The BAM outpout files (and their \*.bai indexes) should be stored in `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP` folder.
-
 ## $\color{orange}{\textsf{C. ACTIVITY}}$
+
+1. You have been given access to eleven single-end illumina sequencing read files in the directory `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP`. These samples were produced from several individuals of _P. dactylifera_ and few of _P. atlantica_ and wild living relatives. Set your own \*.yaml config file to produce \*.BAM files from each of these samples, following the parameters provided above. 
+
+2. The BAM outpout files (and their \*.bai indexes) should be stored in `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP` folder. Together with the summary files. Using the \*.summary files, please produce a table (using command line) where you present average coverage values, and number or bases input and filtered out by PALOEMIX.
 
 
 ## Selected references
