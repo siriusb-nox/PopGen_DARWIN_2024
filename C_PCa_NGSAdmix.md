@@ -1,7 +1,21 @@
 ## A. Principal Component Analysis (PCA) of GLs
-One important aspect in population genomics is the understanding of how multiple individuals from diverse ancestries are rleated to each other. One approximation to such understanding is by inferring how the genetic diversity of individuals is structured in populations. A popular approach to discern structure amongst populations is by using reduction dimension methods, such as Prncipal Component Analysis (PCA). Here, genetic variation is summarised through covariance matrices which are then depicted through coordinates in a dotplot graph. 
+One important aspect in population genomics is the understanding of how multiple individuals from diverse ancestries are rleated to each other. One approximation to such understanding is by inferring how the genetic diversity of individuals is structured in populations. A popular approach to discern structure amongst populations is by using reduction dimension methods, such as Principal Component Analysis (PCA). Here, genetic variation is summarised through covariance matrices which are then depicted through coordinates in a dotplot graph. 
 
-In this tutorial, we will conduct PCA analyses through the package `PCAngsd`, an associated software to `angsd`.
+In this tutorial, we will conduct PCA analyses through the package `PCAngsd`, an associated software to `angsd`. `PCangsd` is basically a python script, which all that requires to run is a \*.beagle file as input. To execute PCAngsd, run the following command:
+
+```bash
+python pcangsd.py -beagle genolike.beagle.gz -threads 10 -o covariance.outfile -iter 10000
+```
+
+where
+
+```bash
+-beagle # This parameter specifies the input beagle file (GLs)
+-iter # This paremeter indicates the number of maximum iterations to estimate allele frequencies (is good to increase it since the default is 100 and might not be enough whenever large number of individuals are being analysed). The analysis will stop once the pogram reaches a level of confidence on the estimation of allele frequences.
+-threads # This parameter specifies the number of threads (or CPU cores) to use for parallel processing. Increase this parameter whenever working with large genomes and many individuals.
+```
+
+
 
 >[!CAUTION]
 >**PCA analyses are not meant to be used as tools for clasification of individuals into discrete populations. They are rather a convenient mean to help understanding how much genetic variation there is between individuals and populations along axes.**
