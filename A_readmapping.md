@@ -210,5 +210,8 @@ SRR106852_NC013991cp   *       *       hits_length(Clan_NC032008cp)    32.199212
 
 The BAM outpout files (and their \*.bai indexes) should be stored in `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP` folder.
 
+## $\color{orange}{\textsf{C. ACTIVITY}}$
+
+
 ## Selected references
 1. Schubert M., et al. 2014. Characterisatyion of ancient DNA and modern genomes by SNP detection and phylogenomic and metagenomic analysis using PALEOMIX. [_Nat. Protoc_. 9: 1056](https://pubmed.ncbi.nlm.nih.gov/24722405/) 
