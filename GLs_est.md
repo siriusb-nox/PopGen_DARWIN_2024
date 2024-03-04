@@ -17,7 +17,6 @@ In general, given the nature of most datasets (i.e., low sequencing coverage for
 >![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/pone.0079667.g001.png)
 >**Figure 1**: Bias in the estimation of segregating sites and expected _Hz_ under different sampling levels. Notice how less bias estimations are whenever many individuals are sampled at lower sequencing depths (1x) (taken from Fumagalli, 2013)
 
-
 ## B. Genotype Likelihood estimation - analysis
 
 We will use `angsd` to infer GLs from a the BAM files produced by `paleomix`. `angsd` (abbreviation of Analysis of Next Generation Sequencing Data) is a versatile software widely used for analyzing genomic data generated from HTS technologies. It can estimate GLs and produce different metrics, including Fst, Site Frequency Spectrum (SFS), Tajima's D, amongst others. 
@@ -72,6 +71,11 @@ SRR6439415_NC013991cp.NC013991cp.realigned.bam
 >`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**, regardless of the model of choice to compute the GLs. This is a limitation if you find yourself working with polyploid genomes.  
 
 One advantage of `angsd` is the flexibility it offers in terms of filtering input datasets. This is possible by estimating the frequency of bases per position across a panel of individuals `(flag -doCounts)`. Once such frequencies are produced, we can remove bases below a given quality threshold `(-minQ)`, remove reads below a given mapping quality `(-minMapQ)`, and even exclude sites from analysis that have below a costumised minimum `(-setMinDepth)` and above maximum `(-setMaxDepth)` sequencing coverage. 
+
+## C. ACTIVITY
+
+Using the command provided above, please compute GLs from the set of BAM files available in the folder `/home/ontasia*/Documents/ONT-workshop-March-2024/BAM_CP/`. NB: you need to first produce the `bam.filelist` (**hint: use `ls *.bam > bam.filelist`.
+
 
 ## Selected references
 1. Fumagalli M. 2013. Assessing the Effect of Sequencing Depth and Sample Size in Population Genetics Inferences. [_PLoS ONE 8:e79667_](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0079667&type=printable)
