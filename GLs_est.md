@@ -13,7 +13,7 @@ In general, given the nature of most datasets (i.e., low sequencing coverage for
 
 >[!IMPORTANT]
 >**GLs (or variants) can be calculated from any set of individuals and different sequencing depths. The same can be told of almost any population genomics metric (e.g., Heterozygosity, Effective population size, etc). What determines how biased your estimations are will depend on how robust your sampling is how well sampled your populations are. Here, a good sampling is defined by how well represented the genetic diversity of your populations are, instead of how well sequenced each individula is. In other words, sequencing many more individuals across the spectrum of a population at lower depths is better than sequencing few individuals at deeper representations**
-
+>![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/pone.0079667.g001.png)
 
 
 
