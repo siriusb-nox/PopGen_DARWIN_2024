@@ -17,8 +17,8 @@ where
 
 As an output, the command will produce a \*.cov file, which can be used as input in R to produce a dotplot and visualise genetic variation of individuals in two dimensions (see Figure 1 for an example on the plot that can be produced in R through the `ggplot2` package).
 
-![**Figure 1**](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/32S_PCAngsd.CP.jpg)
-
+![Figure 1](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/32S_PCAngsd.CP.jpg)
+**Figure 1**. Principal component analysis derived from plastid GLs calculated from 32 individuals. Dots have been coloured following species names assigned to samples. 
 
 
 >[!CAUTION]
