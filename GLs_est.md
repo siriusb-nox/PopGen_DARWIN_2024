@@ -49,6 +49,25 @@ where:
 
 ```
 
+BTW this is how the `bam.filelist` should look like:
+
+```bash
+SRR106852_NC013991cp.NC013991cp.realigned.bam
+SRR121596_NC013991cp.NC013991cp.realigned.bam
+SRR121604_NC013991cp.NC013991cp.realigned.bam
+SRR121607_NC013991cp.NC013991cp.realigned.bam
+SRR121612_NC013991cp.NC013991cp.realigned.bam
+SRR5120109_NC013991cp.NC013991cp.realigned.bam
+SRR5120110_NC013991cp.NC013991cp.realigned.bam
+SRR5120111_NC013991cp.NC013991cp.realigned.bam
+SRR5120112_NC013991cp.NC013991cp.realigned.bam
+SRR5120113_NC013991cp.NC013991cp.realigned.bam
+SRR5120114_NC013991cp.NC013991cp.realigned.bam
+SRR5120115_NC013991cp.NC013991cp.realigned.bam
+SRR6439415_NC013991cp.NC013991cp.realigned.bam
+...
+```
+
 >[!IMPORTANT]
 >`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**.  
 
