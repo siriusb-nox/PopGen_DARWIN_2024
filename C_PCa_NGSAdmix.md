@@ -26,14 +26,12 @@ As an output, the command will produce a \*.cov file, which can be used as input
 
 
 ## B. Admixture/Structure analysis from GLs
-Another important aspect of population genomics the understanding of how populations exchange genetic material and at which proportions. Admixture analysis is then useful to trave the ancestry of admixed proportions of a genome in a given individual, thus allowing to clasify indivduals of unknown ancestry into discrete populations.
+Another important aspect of population genomics the understanding of how populations exchange genetic material and at which proportions. Admixture analysis is then useful to trave the ancestry of admixed proportions of a genome in a given individual, thus allowing to clasify indivduals of unknown ancestry into discrete populations. Such discrete ancestral populations can be modeled by the user, and often multiple numbers of ancestral populations are used as input, with the best fit model assessed by comparing log-likelihood values produced by the analysis. 
 
-In this tutorial, we will infer admixture through the package `NGSadmix`, an associated software to `angsd`.
-
-To execute `NGSadmix`, run the following command:
+In this tutorial, we will infer admixture through the package `NGSadmix`, an associated software to `angsd`. `NGSadmix` requires as input a \*.beagle file and a number of assumed ancestral populations. To automatise the analysis, we can code a `while` loop in bash and iterate through the different ancestral population models we want to test. The `while` loop will iterate across a tab -delimited text file (i.e., `clusters.k file)`. To execute `NGSadmix`, run the following command:
 
 ```bash
-while read K; do NGSadmix -likes genolike.beagle.gz -K $K -outfiles ${K}.NGSadmix.out -printInfo 1 -minMaf 0.05 -P 8; done < clusters.k
+while read K; do NGSadmix -likes genolike.beagle.gz -K $K -outfiles ${K}.NGSadmix.out -minMaf 0.05 -P 8; done < clusters.k
 ```
 
 where
@@ -45,6 +43,19 @@ where
 -P # This parameter specifies the number of threads to use for parallel processing. Increase this parameter whenever working with large genomes and many individuals.
 -outfiles # This parameter indicates a prefix that will be assigned to the output files.
 ```
+
+the `clusters.k` file should look like this:
+
+```bash
+1
+2
+3
+4
+5
+6
+...
+```
+
 
 ## $\color{orange}{\textsf{C. ACTIVITY}}$
 
