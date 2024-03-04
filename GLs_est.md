@@ -49,9 +49,10 @@ where:
 
 ```
 
-
 >[!IMPORTANT]
 >`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**.  
+
+One advantage of `angsd` is the flexibility it offers in terms of filtering input datasets. This is possible by estimating the frequency of bases per position across a panel of individuals `(flag -doCounts)`. Once such frequencies are produced, we can remove bases below a given quality threshold `(-minQ)`, reads below a given mapping quality `(-minMapQ)`... 
 
 ## Selected references
 1. Fumagalli M. 2013. Assessing the Effect of Sequencing Depth and Sample Size in Population Genetics Inferences. [_PLoS ONE 8:e79667_](https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0079667&type=printable)
