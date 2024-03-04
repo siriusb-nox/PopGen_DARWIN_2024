@@ -64,6 +64,7 @@ As an output, the command will produce (per analysed ancestral population):
 A traditional admixture plot presents the proportions (from 0-100, y-axis) of genomic ancestry for each individual (x-axis) across multiple assumed ancestral populations (see Figure 2 for an example).  
 
 ![Figure 2](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/IMG/Admix_32S_NUC.jpg)
+
 **Figure 2**. Population structure analyses of 32 individuals of date palms as inferred from nuclear GLs and 2-6 assumed ancestral populatuions. 
 
 >[!CAUTION]
