@@ -66,6 +66,15 @@ SRR5120115_NC013991cp.NC013991cp.realigned.bam
 SRR6439415_NC013991cp.NC013991cp.realigned.bam
 ...
 ```
+The command provided above will produce four output files as follows:
+
+```bash
+ genolike.mafs.gz # this file contain the major and minor alleles per position and their frequencies
+ genolike.beagle.gz # this file contain the actual GLs. 
+ genolike.arg # this file contains the arguments used to estimate GLs
+```
+Example output files from the estimation of GLs from a similar set of samples is provided in the directory `/home/ontasia*/Documents/ONT-workshop-March-2024//CP_SRA_26796/PCA_32s_v2/`. **The \*.beagle file is required as input to conduct [PCA and Admixture analyses](https://github.com/siriusb-nox/PopGen_DARWIN_2024/blob/main/C_PCa_NGSAdmix.md)**
+
 
 >[!IMPORTANT]
 >`angsd` will always depart from the assumption that individuals included in a panel for GLs estimation are **diploid**, regardless of the model of choice to compute the GLs. This is a limitation if you find yourself working with polyploid genomes.  
